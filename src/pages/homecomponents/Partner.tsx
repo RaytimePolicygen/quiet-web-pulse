@@ -1,3 +1,4 @@
+
 import { Mail } from 'lucide-react';
 
 const Partner = () => {
@@ -14,7 +15,7 @@ const Partner = () => {
           {/* General Inquiries */}
           <div className="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
             <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 mx-auto mb-4 sm:mb-6">
-              <img src="/public/message-icon.png" alt="General Inquiries" className="w-full h-full object-contain" />
+              <img src="/lovable-uploads/218cf53e-78d8-4824-bcf2-d4a62fd52f29.png" alt="General Inquiries" className="w-full h-full object-contain" />
             </div>
             <h3 className="text-xl font-semibold mb-3">General Inquiries</h3>
             <p className="text-gray-600 mb-6">Questions about Pliyt? We'd be happy to help.</p>
@@ -30,7 +31,7 @@ const Partner = () => {
           {/* Partnerships */}
           <div className="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
             <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 mx-auto mb-4 sm:mb-6">
-              <img src="/public/handshake-icon.png" alt="Partnerships" className="w-full h-full object-contain" />
+              <img src="/lovable-uploads/16de0eb9-35d7-4e06-a479-7ad6d575509b.png" alt="Partnerships" className="w-full h-full object-contain" />
             </div>
             <h3 className="text-xl font-semibold mb-3">Partnerships</h3>
             <p className="text-gray-600 mb-6">Interested in working with us? Let's talk.</p>
@@ -46,7 +47,7 @@ const Partner = () => {
           {/* Careers */}
           <div className="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
             <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 mx-auto mb-4 sm:mb-6">
-              <img src="/public/briefcase-icon.png" alt="Careers" className="w-full h-full object-contain" />
+              <img src="/lovable-uploads/5a8f9f8c-e881-452e-a0fc-4c276fb2889a.png" alt="Careers" className="w-full h-full object-contain" />
             </div>
             <h3 className="text-xl font-semibold mb-3">Careers</h3>
             <p className="text-gray-600 mb-6">Join our team and build the future.</p>

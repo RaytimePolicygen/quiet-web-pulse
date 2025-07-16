@@ -15,14 +15,29 @@ const Hero = () => {
   return (
     <>
       <section className="relative text-white bg-gray-900 overflow-hidden w-full min-h-screen">
-        {/* Background image with proper overlay */}
-        <div 
-          className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: `url('/heroimage.png')`,
-            filter: 'brightness(0.7)'
-          }}
-        />
+        {/* Background video with proper overlay */}
+        <video
+          className="absolute inset-0 w-full h-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          style={{ filter: 'brightness(0.7)' }}
+        >
+          <source 
+            src="https://zkuplzcekkckzqjyudtd.supabase.co/storage/v1/object/public/introvideo/pliyt_converted.mp4" 
+            type="video/mp4" 
+          />
+          {/* Fallback background image in case video fails to load */}
+          <div 
+            className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: `url('/heroimage.png')`,
+              filter: 'brightness(0.7)'
+            }}
+          />
+        </video>
         
         {/* Gradient overlay for better text readability */}
         <div className="absolute inset-0 bg-gradient-to-b from-gray-900/60 via-gray-900/40 to-gray-900/70" />

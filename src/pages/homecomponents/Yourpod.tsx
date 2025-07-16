@@ -17,7 +17,7 @@ const YourPod: React.FC = () => {
         <div className="flex flex-col md:flex-row items-center justify-center gap-12 mt-12">
           <div className="md:w-1/3 flex justify-center">
             <div className="relative">
-              <div className="w-40 h-40 bg-[#3b3f6d]/80 rounded-full flex items-center justify-center relative">
+              <div className="w-40 h-40 bg-white/10 rounded-full flex items-center justify-center relative backdrop-blur-sm border border-white/20">
                 <div className="absolute w-[200px] h-[200px] border-4 border-purple-500 rounded-full animate-pulse" style={{
                 transform: 'translate(-50%, -50%)',
                 left: '50%',
@@ -25,7 +25,7 @@ const YourPod: React.FC = () => {
                 boxShadow: '0 0 15px rgba(168, 85, 247, 0.5)'
               }}></div>
                 <img 
-                  src="/lovable-uploads/9bfd593b-3b8b-4a62-a8b7-d9c66411d72e.png" 
+                  src="/lovable-uploads/a804102a-a654-4ffe-bb45-c368b7d924fe.png" 
                   alt="Privacy and Safety in Mobility" 
                   className="w-24 h-24 relative z-10 object-contain" 
                 />

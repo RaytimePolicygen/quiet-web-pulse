@@ -9,6 +9,12 @@ const Firsttoknow: React.FC = () => {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
   const handleSubscribe = () => {
+    console.log('Notify Me button clicked - opening dialog');
+    setIsDialogOpen(true);
+  };
+
+  const handleInputClick = () => {
+    console.log('Email input clicked - opening dialog');
     setIsDialogOpen(true);
   };
 
@@ -31,13 +37,14 @@ const Firsttoknow: React.FC = () => {
               <Input 
                 type="email" 
                 placeholder="Enter your email" 
-                className="bg-white/10 border-white/20 text-white placeholder:text-blue-200"
+                className="bg-white/10 border-white/20 text-white placeholder:text-blue-200 cursor-pointer"
                 readOnly
-                onClick={handleSubscribe}
+                onClick={handleInputClick}
               />
               <Button 
                 onClick={handleSubscribe}
-                className="bg-white text-blue-900 hover:bg-blue-100"
+                className="bg-white text-blue-900 hover:bg-blue-100 transition-colors"
+                type="button"
               >
                 <span>Subscribe</span>
                 <ArrowRight className="ml-2 h-4 w-4" />

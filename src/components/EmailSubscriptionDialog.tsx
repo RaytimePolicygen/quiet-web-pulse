@@ -30,6 +30,8 @@ const EmailSubscriptionDialog: React.FC<EmailSubscriptionDialogProps> = ({
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
+    console.log('Form submitted with email:', email);
+    
     if (!email || !email.includes('@')) {
       toast({
         title: "Invalid Email",
@@ -40,6 +42,7 @@ const EmailSubscriptionDialog: React.FC<EmailSubscriptionDialogProps> = ({
     }
 
     setIsSubmitting(true);
+    console.log('Starting email submission to Supabase...');
 
     try {
       const { error } = await supabase
@@ -52,6 +55,7 @@ const EmailSubscriptionDialog: React.FC<EmailSubscriptionDialogProps> = ({
         ]);
 
       if (error) {
+        console.error('Supabase error:', error);
         if (error.code === '23505') { // Unique constraint violation
           toast({
             title: "Already Subscribed",
@@ -62,6 +66,7 @@ const EmailSubscriptionDialog: React.FC<EmailSubscriptionDialogProps> = ({
           throw error;
         }
       } else {
+        console.log('Email successfully submitted to database');
         setIsSuccess(true);
         toast({
           title: "Successfully Subscribed!",
@@ -81,10 +86,13 @@ const EmailSubscriptionDialog: React.FC<EmailSubscriptionDialogProps> = ({
   };
 
   const handleClose = () => {
+    console.log('Dialog closing, resetting state');
     setEmail('');
     setIsSuccess(false);
     onOpenChange(false);
   };
+
+  console.log('Dialog render - open:', open, 'isSuccess:', isSuccess, 'isSubmitting:', isSubmitting);
 
   return (
     <Dialog open={open} onOpenChange={handleClose}>

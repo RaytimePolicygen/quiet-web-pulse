@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { Circle, Lock } from 'lucide-react';
+
 const YourPod: React.FC = () => {
   return <section className="py-16 bg-[#1e2130] text-white">
       <div className="container mx-auto px-4">
@@ -23,7 +24,11 @@ const YourPod: React.FC = () => {
                 top: '50%',
                 boxShadow: '0 0 15px rgba(168, 85, 247, 0.5)'
               }}></div>
-                <Lock className="w-24 h-24 text-white relative z-10" />
+                <img 
+                  src="/lovable-uploads/9bfd593b-3b8b-4a62-a8b7-d9c66411d72e.png" 
+                  alt="Privacy and Safety in Mobility" 
+                  className="w-24 h-24 relative z-10 object-contain" 
+                />
               </div>
               <p className="text-center mt-4 text-gray-300 text-[20px] font-bold">Built for trust, not tracking.</p>
             </div>
@@ -52,4 +57,5 @@ const YourPod: React.FC = () => {
       </div>
     </section>;
 };
+
 export default YourPod;

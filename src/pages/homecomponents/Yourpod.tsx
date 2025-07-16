@@ -1,72 +1,48 @@
-
 import React from 'react';
-import { Lock, Shield } from 'lucide-react';
-
+import { Circle, Lock } from 'lucide-react';
 const YourPod: React.FC = () => {
-  return (
-    <section className="py-24 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-white relative overflow-hidden">
-      {/* Background pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `radial-gradient(circle at 50% 50%, white 1px, transparent 1px)`,
-          backgroundSize: '50px 50px'
-        }}></div>
-      </div>
-      
-      <div className="container mx-auto px-6 relative">
-        <div className="text-center mb-16">
-          <span className="inline-block px-6 py-2 rounded-full bg-blue-500/20 text-blue-300 text-sm font-semibold mb-8">
+  return <section className="py-16 bg-[#1e2130] text-white">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-8">
+          <span className="inline-block px-4 py-1 rounded-full bg-blue-900/30 text-blue-200 text-sm font-medium mb-4">
             Privacy-First by Design
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-            Your Pod. Your Privacy. <br />
-            <span className="text-blue-400">Your Space.</span>
-          </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Your Pod. Your Privacy. Your Space.</h2>
+          <p className="text-gray-300 max-w-2xl mx-auto font-[30px]">
             At Pliyt, privacy isn't a feature—it's a foundation
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="flex justify-center lg:justify-start">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-12 mt-12">
+          <div className="md:w-1/3 flex justify-center">
             <div className="relative">
-              <div className="w-64 h-64 bg-gradient-to-br from-blue-600/30 to-purple-600/30 rounded-full flex items-center justify-center relative backdrop-blur-sm border border-blue-400/20">
-                <div className="absolute inset-0 rounded-full border-4 border-blue-400/30 animate-pulse"></div>
-                <div className="absolute inset-4 rounded-full border-2 border-purple-400/20 animate-pulse" style={{ animationDelay: '1s' }}></div>
-                <Lock className="w-24 h-24 text-blue-300 relative z-10" />
+              <div className="w-40 h-40 bg-[#3b3f6d]/80 rounded-full flex items-center justify-center relative">
+                <div className="absolute w-[200px] h-[200px] border-4 border-purple-500 rounded-full animate-pulse" style={{
+                transform: 'translate(-50%, -50%)',
+                left: '50%',
+                top: '50%',
+                boxShadow: '0 0 15px rgba(168, 85, 247, 0.5)'
+              }}></div>
+                <Lock className="w-24 h-24 text-white relative z-10" />
               </div>
-              <div className="text-center mt-8">
-                <p className="text-blue-300 text-xl font-semibold">Built for trust, not tracking.</p>
-              </div>
+              <p className="text-center mt-4 text-gray-300 text-[20px] font-bold">Built for trust, not tracking.</p>
             </div>
           </div>
 
-          <div className="space-y-8">
-            <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
-              <div className="flex items-start gap-4 mb-4">
-                <Shield className="w-6 h-6 text-blue-400 mt-1" />
-                <div>
-                  <h3 className="text-lg font-semibold mb-2 text-white">Complete Anonymity</h3>
-                  <p className="text-gray-300 leading-relaxed">
-                    Each autonomous pod is designed for complete in-ride anonymity, even in 
-                    shared trips. No one knows who you're riding with—and that's the point.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
-              <h3 className="text-lg font-semibold mb-2 text-white">No Surveillance</h3>
-              <p className="text-gray-300 leading-relaxed">
-                We believe that true innovation in mobility doesn't require constant 
-                surveillance or data harvesting. Instead, we've built a system that respects 
-                digital boundaries as much as physical ones.
+          <div className="md:w-1/2 space-y-6">
+            <div>
+              <p className="text-gray-200 mb-4 ">
+                Each autonomous pod is designed for complete in-ride anonymity, even in 
+                shared trips. No one knows who you're riding with—and that's the point.
               </p>
             </div>
 
-            <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
-              <h3 className="text-lg font-semibold mb-2 text-white">Modern Convenience</h3>
-              <p className="text-gray-300 leading-relaxed">
+            <div>
+              <p className="text-gray-200 mb-4">Built for Privacy and Safety.</p>
+            </div>
+
+            <div>
+              <p className="text-gray-200">
                 You shouldn't have to choose between modern convenience and basic 
                 privacy rights. With Pliyt, you don't have to.
               </p>
@@ -74,8 +50,6 @@ const YourPod: React.FC = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default YourPod;

@@ -1,8 +1,7 @@
+
 import React from 'react';
 
 const teamMembers = [
- 
-  
   {
     name: 'Chris J Eckert',
     role: 'CEO',
@@ -51,24 +50,35 @@ const teamMembers = [
 
 const MeetourTeam: React.FC = () => {
   return (
-    <div className="py-16 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div className="py-20 bg-gradient-to-b from-white to-gray-50">
+      <div className="container mx-auto px-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {teamMembers.map((member, index) => (
-            <div key={index} className="group bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-              <div className="flex justify-center mb-6">
-                <div className="relative w-40 h-40">
-                  <img 
-                    src={member.image} 
-                    alt={member.name}
-                    className="w-full h-full object-cover rounded-full ring-4 ring-gray-100 group-hover:ring-gray-200 transition-all duration-300"
-                  />
+            <div key={index} className="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100">
+              <div className="flex justify-center mb-8">
+                <div className="relative">
+                  <div className="w-32 h-32 rounded-full overflow-hidden ring-4 ring-blue-100 group-hover:ring-blue-200 transition-all duration-300">
+                    <img 
+                      src={member.image} 
+                      alt={member.name}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+                    <span className="text-white text-xs font-bold">✓</span>
+                  </div>
                 </div>
               </div>
-              <div className="text-center space-y-3">
-                <h3 className="text-xl font-bold text-gray-900">{member.name}</h3>
-                <p className="text-gray-600 font-medium">{member.role}</p>
-                <p className="text-gray-600 text-sm leading-relaxed">{member.Description}</p>
+              <div className="text-center space-y-4">
+                <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
+                  {member.name}
+                </h3>
+                <div className="inline-block px-4 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold">
+                  {member.role}
+                </div>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {member.Description}
+                </p>
               </div>
             </div>
           ))}

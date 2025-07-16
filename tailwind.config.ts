@@ -12,7 +12,7 @@ export default {
 	prefix: "",
 	theme: {
 		fontFamily: {
-			sans: ['Space Grotesk', 'sans-serif'],
+			sans: ['Inter', 'sans-serif'],
 		},
 		container: {
 			center: true,

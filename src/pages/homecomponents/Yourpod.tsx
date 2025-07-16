@@ -30,7 +30,6 @@ const YourPod: React.FC = () => {
                   className="w-24 h-24 relative z-10 object-contain" 
                 />
               </div>
-              <p className="text-center mt-4 text-gray-300 text-[20px] font-bold -ml-[10px]">Built for Privacy and Safety in Mobility</p>
             </div>
           </div>
 

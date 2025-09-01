@@ -36,15 +36,15 @@ const teamMembers = [
     Description:"8 years of experience as a Founder of B2C startup. Scaled business to 3L customer base. Accelerated by UN SDG accelerator"
   },
   {
-    name: 'Ashwin K V',
-    role: 'COO',
-    image: '/coo.png',
+    name: 'Philip Reinckens',
+    role: 'Advisor',
+    image: '/philip.png',
     social: {
       linkedin: '#',
       twitter: '#',
       instagram: '#'
     },
-    Description: "Skilled professional with 10 years of deep expertise in embedded software and functional safety within the automotive industry. Worked for Rivian, FCA, Byton and Merc Benz."
+    Description: "Philip Reinckens is a mobility industry veteran and transformational leader, former CEO of Spin, now SVP at Gatik, with proven expertise scaling automotive and tech businesses."
   }
 ];
 

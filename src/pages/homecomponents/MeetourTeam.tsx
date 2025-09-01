@@ -37,7 +37,7 @@ const teamMembers = [
   },
   {
     name: 'Philip Reinckens',
-    role: 'Advisor',
+    role: 'Adviser',
     image: '/philip.png',
     social: {
       linkedin: '#',

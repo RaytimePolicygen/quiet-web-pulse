@@ -38,7 +38,7 @@ const teamMembers = [
   {
     name: 'Philip Reinckens',
     role: 'Advisor',
-    image: '/lovable-uploads/8a0e2fd6-ed53-4695-bdc6-85fff65f7abe.png',
+    image: '/lovable-uploads/88f92526-efa6-4fa8-b737-7e0b4ac79f14.png',
     social: {
       linkedin: '#',
       twitter: '#',

@@ -51,7 +51,9 @@ const ContactUs: React.FC = () => {
             <h3 className="text-2xl font-bold mb-4 text-gray-900">Cities & Partners</h3>
             <p className="text-gray-600 mb-8 leading-relaxed">Let's shape the urban commute—together.</p>
             <a 
-              href="mailto:pradeep.ps@pliyt.com" 
+              href="https://pliyt.com/partner" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 rounded-xl bg-purple-50 hover:bg-purple-100 transition-all duration-300 group-hover:scale-105 border border-purple-200"
             >
               <span className="text-purple-700 font-semibold">Partner With Us</span>

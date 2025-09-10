@@ -15,7 +15,9 @@ const ContactUs: React.FC = () => {
             <h3 className="text-2xl font-bold mb-4 text-gray-900">Investors</h3>
             <p className="text-gray-600 mb-8 leading-relaxed">Invest in the future of ethical autonomy.</p>
             <a 
-              href="mailto:hello@pliyt.com" 
+              href="https://pliyt.com/partner" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 rounded-xl bg-blue-50 hover:bg-blue-100 transition-all duration-300 group-hover:scale-105 border border-blue-200"
             >
               <span className="text-blue-700 font-semibold">Contact Our Team</span>
@@ -31,7 +33,9 @@ const ContactUs: React.FC = () => {
             <h3 className="text-2xl font-bold mb-4 text-gray-900">Talent</h3>
             <p className="text-gray-600 mb-8 leading-relaxed">Build something meaningful. Work on what matters.</p>
             <a 
-              href="mailto:jobs@pliyt.com" 
+              href="https://pliyt.com/partner" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 rounded-xl bg-green-50 hover:bg-green-100 transition-all duration-300 group-hover:scale-105 border border-green-200"
             >
               <span className="text-green-700 font-semibold">Reach out to Us</span>

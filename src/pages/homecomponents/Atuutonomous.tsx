@@ -53,16 +53,13 @@ const Autonomous: React.FC = () => {
 
         <div className="relative rounded-3xl overflow-hidden shadow-2xl">
           <img 
-            src="/section4carffront.png" 
+            src="/sfopliyt.png" 
             alt="Pliyt Autonomous Pod" 
             className="w-full h-auto object-cover"
             loading="lazy"
           />
           <div className="absolute bottom-8 right-8 bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-xl max-w-sm">
-            <h4 className="text-lg font-bold text-gray-900 mb-2">Pod Interior</h4>
-            <p className="text-gray-600">
-              Soft lighting, ergonomic seats, and intuitive controls. Every element designed for comfort.
-            </p>
+            <p className="font-semibold text-lg text-gray-900">"Own your ride, not just your destination."</p>
           </div>
         </div>
       </div>

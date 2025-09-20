@@ -11,7 +11,12 @@ const teamMembers = [
       twitter: '#',
       instagram: '#'
     },
-    Description: "Nearly three decades of extensive automotive industry experience, spanning design, engineering, and leadership roles at top-tier OEMs and startups. His career highlights include pivotal positions at Tesla, NIO, Toyota, and Ford."
+    Description: "Nearly three decades of extensive automotive industry experience.",
+    companies: [
+      { name: 'Tesla', logo: '/tesla-logo.png' },
+      { name: 'Toyota', logo: '/toyota-logo.png' },
+      { name: 'NIO', logo: '/nio-logo.png' }
+    ]
   },
   {
     name: 'Shalin James Anto',
@@ -79,6 +84,22 @@ const MeetourTeam: React.FC = () => {
                 <p className="text-gray-600 text-sm leading-relaxed">
                   {member.Description}
                 </p>
+                {member.companies && (
+                  <div className="mt-4">
+                    <p className="text-xs text-gray-500 mb-2">Experience at:</p>
+                    <div className="flex justify-center items-center gap-2 flex-wrap">
+                      {member.companies.map((company, companyIndex) => (
+                        <div key={companyIndex} className="w-8 h-8 flex items-center justify-center">
+                          <img 
+                            src={company.logo} 
+                            alt={company.name}
+                            className="max-w-full max-h-full object-contain opacity-70 hover:opacity-100 transition-opacity"
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           ))}

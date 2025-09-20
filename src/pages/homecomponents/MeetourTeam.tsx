@@ -27,7 +27,12 @@ const teamMembers = [
       twitter: '#',
       instagram: '#'
     },
-    Description:"13 Years of Automotive R&D expertise. Worked for Major OEMs like Honda, Byton, Tesla. Contributed to Waymo's Autonomous vehicles for 4 years on multiple platforms."
+    Description:"15 Years of Automotive R&D expertise.",
+    companies: [
+      { name: 'Honda', logo: '/honda-logo.png' },
+      { name: 'Byton', logo: '/byton-logo.png' },
+      { name: 'Waymo', logo: '/waymo-logo.png' }
+    ]
   },
   {
     name: 'Pradeep P S',

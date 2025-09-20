@@ -3,7 +3,7 @@ import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-const landingpagesection2 = '/landingpagesection2.jpg';
+const renderImage = '/renderimage.png';
 
 const Rethink: React.FC = () => {
   return (
@@ -46,7 +46,7 @@ const Rethink: React.FC = () => {
           <div className="relative animate-fade-in" style={{ animationDelay: '400ms' }}>
             <div className="rounded-2xl overflow-hidden shadow-2xl relative group">
               <img
-                src={landingpagesection2}
+                src={renderImage}
                 alt="Autonomous vehicle"
                 className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
               />

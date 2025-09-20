@@ -58,7 +58,11 @@ const teamMembers = [
       twitter: '#',
       instagram: '#'
     },
-    Description: "Philip Reinckens is a mobility industry veteran and transformational leader, former CEO of Spin, now SVP at Gatik, with proven expertise scaling automotive and tech businesses."
+    Description: "Mobility industry veteran. Former CEO of Spin, now SVP at Gatik",
+    companies: [
+      { name: 'Spin', logo: '/spin-logo.png' },
+      { name: 'Gatik', logo: '/gatik-logo.png' }
+    ]
   }
 ];
 

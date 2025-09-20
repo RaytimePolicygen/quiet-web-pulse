@@ -35,7 +35,7 @@ const InvestmentSection: React.FC = () => {
             <div className="flex items-center gap-6 flex-1">
               <div className="flex items-center gap-4">
                 <img 
-                  src="/pliyt-logo-3d.jpeg" 
+                  src="/pliyt-logo-3d.png" 
                   alt="Pliyt Logo" 
                   className="w-16 h-16 object-contain rounded-xl"
                 />

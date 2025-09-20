@@ -1,10 +1,7 @@
-
 import React from 'react';
 import { Car, Leaf, Shield } from 'lucide-react';
-
 const Autonomous: React.FC = () => {
-  return (
-    <section className="py-24 bg-white">
+  return <section className="py-24 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <span className="inline-block px-6 py-2 rounded-full bg-blue-100 text-blue-800 text-sm font-semibold mb-8">
@@ -52,19 +49,15 @@ const Autonomous: React.FC = () => {
         </div>
 
         <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-          <img 
-            src="/sfopliyt.png" 
-            alt="Pliyt Autonomous Pod" 
-            className="w-full h-auto object-cover"
-            loading="lazy"
-          />
+          <img src="/section4carffront.png" alt="Pliyt Autonomous Pod" className="w-full h-auto object-cover" loading="lazy" />
           <div className="absolute bottom-8 right-8 bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-xl max-w-sm">
-            <p className="font-semibold text-lg text-gray-900">"Own your ride, not just your destination."</p>
+            <h4 className="text-lg font-bold text-gray-900 mb-2">"Soft lighting, ergonomic seats, and intuitive controls. Every element designed for comfort."</h4>
+            <p className="text-gray-600">
+              Soft lighting, ergonomic seats, and intuitive controls. Every element designed for comfort.
+            </p>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Autonomous;

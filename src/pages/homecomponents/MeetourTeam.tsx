@@ -43,7 +43,11 @@ const teamMembers = [
       twitter: '#',
       instagram: '#'
     },
-    Description:"8 years of experience as a Founder of B2C startup. Scaled business to 3L customer base. Accelerated by UN SDG accelerator"
+    Description:"8 years of experience as a Founder of B2C startup. Accelerated by UN SDG accelerator",
+    companies: [
+      { name: 'Farmers Fresh Zone', logo: '/farmers-fresh-zone-logo.png' },
+      { name: 'UN SDG Accelerator', logo: '/sdg-accelerator-logo.png' }
+    ]
   },
   {
     name: 'Philip Reinckens',

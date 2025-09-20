@@ -8,6 +8,7 @@ import MeetourTeam from "./homecomponents/MeetourTeam";
 import ContactUs from "./homecomponents/ContactUs";
 import Hero from "./homecomponents/Hero";
 import Firsttoknow from "./homecomponents/Firsttoknow";
+import InvestmentSection from "./homecomponents/InvestmentSection";
 
 const HomePage = () => {
   return (
@@ -17,6 +18,7 @@ const HomePage = () => {
       {/* Rethink Section */}
       <Rethink />
       <Autonomous />
+      <InvestmentSection />
       <YourPod />
       <TheTimeIsRight />
       <OurTeamHeader />
